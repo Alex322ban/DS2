@@ -67,7 +67,38 @@ Public Class HotelCD
         Return tb
     End Function
 
+    Public Function AssignHabitacion(ByVal IDH As Integer, ByVal IDC As Integer)
+        Dim da As New SqlDataAdapter("P0006", cn.getCN)
+        da.SelectCommand.CommandType = CommandType.StoredProcedure
 
+        da.SelectCommand.Parameters.AddWithValue("@IDC", IDC)
+        da.SelectCommand.Parameters.AddWithValue("@IDH", IDH)
+
+        Dim tb As New DataTable
+        da.Fill(tb)
+        Return tb
+
+    End Function
+    Public Function UnassignHabitacion(ByVal IDH As Integer)
+        Dim da As New SqlDataAdapter("P0007", cn.getCN)
+        da.SelectCommand.CommandType = CommandType.StoredProcedure
+
+        da.SelectCommand.Parameters.AddWithValue("@IDH", IDH)
+
+        Dim tb As New DataTable
+        da.Fill(tb)
+        Return tb
+    End Function
+    Public Function EnableHabitacion(ByVal IDH As Integer)
+
+        Dim da As New SqlDataAdapter("P0008", cn.getCN)
+        da.SelectCommand.CommandType = CommandType.StoredProcedure
+
+        da.SelectCommand.Parameters.AddWithValue("@IDH", IDH)
+        Dim tb As New DataTable
+        da.Fill(tb)
+        Return tb
+    End Function
 
     Public Function ListCliente() As DataTable
         Dim da As New SqlDataAdapter("P0009", cn.getCN)
