@@ -78,3 +78,6 @@ INSERT INTO INVENTARIO VALUES(60029, 'Sabana','','0')
 
 
 
+
+
+
