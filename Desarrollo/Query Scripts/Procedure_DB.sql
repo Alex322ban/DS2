@@ -107,3 +107,40 @@ AS
 BEGIN
 INSERT INTO BOLETA VALUES(@ID,@IDC,@FECHA,@MONTO,@IGV)
 END
+
+--LISTAR CLIENTES
+--======================================================
+CREATE PROCEDURE P0009
+AS
+BEGIN
+SELECT Nomb AS 'Nombre', Ape AS 'Apellido', DNI 
+FROM CLIENTE
+END
+--LISTAR HABITACIONES
+--======================================================
+CREATE PROCEDURE P0010
+AS
+BEGIN 
+SELECT num AS 'Cuarto', Nomb AS 'Nombres', Ape AS 'Apellidos',DNI, DESCRIPCION AS 'Descripción'
+FROM HABITACION
+INNER JOIN CLIENTE ON (HABITACION.IDC=CLIENTE.IDC)
+INNER JOIN ESTADOH ON (HABITACION.ESTADO = ESTADOH.ESTADO)
+END
+
+--LISTAR GARAJE 
+--======================================================
+CREATE PROCEDURE P0011
+AS 
+BEGIN 
+SELECT SLOT AS 'Número', PLACA AS 'Placa', DNI, DESCRIPCION AS 'Descripción'
+FROM GARAJE
+INNER JOIN ESTADOG ON (GARAJE.DISPO = ESTADOG.DISPO)
+END
+
+--LISTAR INVENTARIO 
+--======================================================
+ SELECT *
+ FROM INVENTARIO
+
+
+
