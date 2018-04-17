@@ -34,6 +34,7 @@ Partial Class MantCli
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btn_pago = New System.Windows.Forms.Button()
         CType(Me.dgv_cli, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,7 +48,7 @@ Partial Class MantCli
         Me.dgv_cli.Name = "dgv_cli"
         Me.dgv_cli.ReadOnly = True
         Me.dgv_cli.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_cli.Size = New System.Drawing.Size(393, 213)
+        Me.dgv_cli.Size = New System.Drawing.Size(364, 213)
         Me.dgv_cli.TabIndex = 1
         '
         'GroupBox1
@@ -153,11 +154,21 @@ Partial Class MantCli
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "DNI"
         '
+        'btn_pago
+        '
+        Me.btn_pago.Location = New System.Drawing.Point(387, 230)
+        Me.btn_pago.Name = "btn_pago"
+        Me.btn_pago.Size = New System.Drawing.Size(150, 23)
+        Me.btn_pago.TabIndex = 4
+        Me.btn_pago.Text = "Realizar Pago"
+        Me.btn_pago.UseVisualStyleBackColor = True
+        '
         'MantCli
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(573, 234)
+        Me.ClientSize = New System.Drawing.Size(547, 259)
+        Me.Controls.Add(Me.btn_pago)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgv_cli)
         Me.Name = "MantCli"
@@ -181,4 +192,5 @@ Partial Class MantCli
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents btn_pago As Button
 End Class

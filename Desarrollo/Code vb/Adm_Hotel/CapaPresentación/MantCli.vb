@@ -70,4 +70,8 @@ Public Class MantCli
             End If
         End If
     End Sub
+
+    Private Sub btn_pago_Click(sender As Object, e As EventArgs) Handles btn_pago.Click
+
+    End Sub
 End Class
