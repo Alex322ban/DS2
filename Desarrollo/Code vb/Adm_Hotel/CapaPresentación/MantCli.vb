@@ -23,10 +23,7 @@ Public Class MantCli
         txt_ape.Text = dgv_cli.Item(1, i).Value()
     End Sub
     Private Sub BTN_updcli_Click(sender As Object, e As EventArgs) Handles BTN_updcli.Click
-
-
-
-        Dim result As Integer = MessageBox.Show("¿Seguro quiere actualizar?", "caption", MessageBoxButtons.YesNoCancel)
+        Dim result As Integer = MessageBox.Show("¿Seguro quiere actualizar?", "Actualizar", MessageBoxButtons.YesNoCancel)
         If result = DialogResult.Cancel Then
             cargarCliente()
         ElseIf result = DialogResult.No Then

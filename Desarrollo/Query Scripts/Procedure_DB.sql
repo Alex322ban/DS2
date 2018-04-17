@@ -19,13 +19,13 @@ AS
 BEGIN
 UPDATE CLIENTE
 SET Nomb=@NOMB, Ape=@APE, DNI=@DNI
-WHERE IDC= @DNI
+WHERE DNI= @DNI
 END
 
 --ELIMINAR CLIENTE
 --======================================================
 CREATE PROCEDURE P0003
-@DNI INT
+@DNI VARCHAR(7)
 AS 
 BEGIN
 DELETE 
