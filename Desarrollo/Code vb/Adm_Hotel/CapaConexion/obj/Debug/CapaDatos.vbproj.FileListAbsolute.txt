@@ -1,0 +1,10 @@
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\obj\Debug\CapaDatos.vbprojResolveAssemblyReference.cache
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\obj\Debug\CapaDatos.Resources.resources
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\obj\Debug\CapaDatos.vbproj.GenerateResource.Cache
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\obj\Debug\CapaDatos.xml
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\bin\Debug\CapaDatos.exe.config
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\bin\Debug\CapaDatos.exe
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\bin\Debug\CapaDatos.pdb
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\bin\Debug\CapaDatos.xml
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\obj\Debug\CapaDatos.exe
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaConexion\obj\Debug\CapaDatos.pdb

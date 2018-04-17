@@ -2,11 +2,10 @@
 
 Public Class HotelCD
     Private cn As New Conexion
-    Public Function AddCliente(ByVal idc As Integer, ByVal nomb As String, ByVal ape As String, ByVal dni As String)
+    Public Function AddCliente(ByVal nomb As String, ByVal ape As String, ByVal dni As String)
         Dim da As New SqlDataAdapter("P0001", cn.getCN)
         da.SelectCommand.CommandType = CommandType.StoredProcedure
 
-        da.SelectCommand.Parameters.AddWithValue("@IDC", idc)
         da.SelectCommand.Parameters.AddWithValue("@NOMB", nomb)
         da.SelectCommand.Parameters.AddWithValue("@APE", ape)
         da.SelectCommand.Parameters.AddWithValue("@DNI", dni)
@@ -32,11 +31,11 @@ Public Class HotelCD
         Return tb
     End Function
 
-    Public Function DeleteCliente(ByVal IDC As Integer)
+    Public Function DeleteCliente(ByVal dell As String)
         Dim da As New SqlDataAdapter("P0003", cn.getCN)
         da.SelectCommand.CommandType = CommandType.StoredProcedure
 
-        da.SelectCommand.Parameters.AddWithValue("@IDC", IDC)
+        da.SelectCommand.Parameters.AddWithValue("@DNI", dell)
 
         Dim tb As New DataTable
         da.Fill(tb)
@@ -120,6 +119,15 @@ Public Class HotelCD
         da.Fill(tb)
         Return tb
     End Function
+
+
+    Public Function ListInventario() As DataTable
+        Dim da As New SqlDataAdapter("P0012", cn.getCN)
+        Dim tb As New DataTable
+        da.Fill(tb)
+        Return tb
+    End Function
+
 
 
 
