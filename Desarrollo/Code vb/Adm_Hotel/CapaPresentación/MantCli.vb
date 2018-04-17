@@ -8,12 +8,20 @@ Public Class MantCli
         dgv_cli.DataSource = HOTEL.ListCli()
     End Sub
     Private Sub BTN_addcli_Click(sender As Object, e As EventArgs) Handles BTN_addcli.Click
-        HOTEL.AddCli(txt_nomb.Text, txt_ape.Text, txt_dni.Text)
-        cargarCliente()
+        If txt_ape.Text = "" Or txt_dni.Text = "" Or txt_nomb.Text = "" Then
+            MsgBox("Complete los recuadros", MessageBoxIcon.Warning)
+        Else
+            HOTEL.AddCli(txt_nomb.Text, txt_ape.Text, txt_dni.Text)
+            cargarCliente()
+        End If
     End Sub
     Private Sub BTN_deltcli_Click(sender As Object, e As EventArgs) Handles BTN_deltcli.Click
-        HOTEL.DelCli(txt_dni.Text)
-        cargarCliente()
+        If txt_ape.Text = "" Or txt_dni.Text = "" Or txt_nomb.Text = "" Then
+            MsgBox("Error al eliminar datos", MessageBoxIcon.Warning)
+        Else
+            HOTEL.DelCli(txt_dni.Text)
+            cargarCliente()
+        End If
     End Sub
     Private Sub dgv_cli_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_cli.CellClick
         Dim i As Integer
@@ -29,8 +37,13 @@ Public Class MantCli
         ElseIf result = DialogResult.No Then
             cargarCliente()
         ElseIf result = DialogResult.Yes Then
-            HOTEL.EditCli(txt_nomb.Text, txt_ape.Text, txt_dni.Text)
-            cargarCliente()
+            If txt_ape.Text = "" Or txt_dni.Text = "" Or txt_nomb.Text = "" Then
+                MsgBox("Complete los recuadros", MessageBoxIcon.Warning)
+            Else
+                MsgBox("Datos actualizados", "Exitoso")
+                HOTEL.EditCli(txt_nomb.Text, txt_ape.Text, txt_dni.Text)
+                cargarCliente()
+            End If
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -40,5 +53,21 @@ Public Class MantCli
         txt_dni.Clear()
         txt_nomb.Clear()
         txt_ape.Clear()
+    End Sub
+
+    Private Sub txt_dni_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_dni.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        Else
+            If Char.IsControl(e.KeyChar) Then
+                e.Handled = False
+            Else
+                If Char.IsSeparator(e.KeyChar) Then
+                    e.Handled = False
+                Else
+                    e.Handled = True
+                End If
+            End If
+        End If
     End Sub
 End Class
