@@ -16,10 +16,10 @@ Public Class HotelCD
         Return tb
     End Function
 
-    Public Function UpdateCliente(ByVal nomb As String, ByVal ape As String, ByVal dni As String)
+    Public Function UpdateCliente(ByVal idc As Integer, ByVal nomb As String, ByVal ape As String, ByVal dni As String)
         Dim da As New SqlDataAdapter("P0002", cn.getCN)
         da.SelectCommand.CommandType = CommandType.StoredProcedure
-
+        da.SelectCommand.Parameters.AddWithValue("@IDC", idc)
         da.SelectCommand.Parameters.AddWithValue("@NOMB", nomb)
         da.SelectCommand.Parameters.AddWithValue("@APE", ape)
         da.SelectCommand.Parameters.AddWithValue("@DNI", dni)
@@ -44,6 +44,7 @@ Public Class HotelCD
     Public Function AddVehiculoG(ByVal SLOT As Integer, ByVal PLACA As String, ByVal DNI As String)
         Dim da As New SqlDataAdapter("P0004", cn.getCN)
         da.SelectCommand.CommandType = CommandType.StoredProcedure
+
 
         da.SelectCommand.Parameters.AddWithValue("@SLOT", SLOT)
         da.SelectCommand.Parameters.AddWithValue("@PLACA", PLACA)

@@ -18,3 +18,4 @@ C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPrese
 C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.exe
 C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.xml
 C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.pdb
+C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.MantGaraj.resources

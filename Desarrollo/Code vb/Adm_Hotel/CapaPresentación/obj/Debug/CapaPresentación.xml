@@ -22,5 +22,135 @@ CapaPresentación
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:CapaPresentación.DB_HOTELDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet.GARAJEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet.GARAJERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet.GARAJERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSetTableAdapters.GARAJETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentación.DB_HOTELDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentación.DB_HOTELDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentación.DB_HOTELDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager.UpdateAll(CapaPresentación.DB_HOTELDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1.LISTCBSLOTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1.LISTCBSLOTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1.LISTCBSLOTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1TableAdapters.LISTCBSLOTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentación.DB_HOTELDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentación.DB_HOTELDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentación.DB_HOTELDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager.UpdateAll(CapaPresentación.DB_HOTELDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:CapaPresentación.DB_HOTELDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

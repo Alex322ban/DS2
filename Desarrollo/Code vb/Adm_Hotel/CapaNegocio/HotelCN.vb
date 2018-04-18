@@ -11,7 +11,14 @@ Public Class HotelCN
     Public Function DelCli(ByVal dni As String)
         Return hotel.DeleteCliente(dni)
     End Function
-    Public Function EditCli(ByVal nomb As String, ByVal ape As String, ByVal dni As String)
-        Return hotel.UpdateCliente(nomb, ape, dni)
+    Public Function EditCli(ByVal idc As Integer, ByVal nomb As String, ByVal ape As String, ByVal dni As String)
+        Return hotel.UpdateCliente(idc, nomb, ape, dni)
     End Function
+    Public Function ListGaraj() As DataTable
+        Return hotel.ListGaraje
+    End Function
+    Public Function AddVehiG(ByVal slot As Integer, ByVal placa As String, ByVal dni As String)
+        Return hotel.AddVehiculoG(slot, placa, dni)
+    End Function
+
 End Class
