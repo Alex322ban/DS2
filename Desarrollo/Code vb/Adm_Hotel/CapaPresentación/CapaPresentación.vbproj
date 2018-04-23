@@ -81,6 +81,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_HOTELDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MantCli.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,12 @@
       <DependentUpon>MantGaraj.vb</DependentUpon>
     </Compile>
     <Compile Include="MantGaraj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantHabit.Designer.vb">
+      <DependentUpon>MantHabit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MantHabit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -111,11 +123,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantCli.resx">
       <DependentUpon>MantCli.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantGaraj.resx">
       <DependentUpon>MantGaraj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantHabit.resx">
+      <DependentUpon>MantHabit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
