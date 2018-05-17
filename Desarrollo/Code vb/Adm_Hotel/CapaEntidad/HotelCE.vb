@@ -6,6 +6,26 @@
     Private _slot As Integer
     Private _placa As String
     Private _idh As String
+    Private _usr As String
+    Private _pass As String
+
+    Public Property Pass As Integer
+        Get
+            Return _pass
+        End Get
+        Set(value As Integer)
+            _pass = value
+        End Set
+    End Property
+    Public Property Usr As Integer
+        Get
+            Return _usr
+        End Get
+        Set(value As Integer)
+            _usr = value
+        End Set
+    End Property
+
 
     Public Property Idc As Integer
         Get

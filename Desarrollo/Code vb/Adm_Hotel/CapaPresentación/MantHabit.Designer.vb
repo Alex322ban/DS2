@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MantHabit
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,144 +20,147 @@ Partial Class MantHabit
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btn_liberar = New System.Windows.Forms.Button()
-        Me.btn_actualizar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.CB_slot = New System.Windows.Forms.ComboBox()
+        Me.ESTADOIBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DB_HOTELDataSet2 = New CapaPresentación.DB_HOTELDataSet2()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_placa = New System.Windows.Forms.TextBox()
-        Me.dgv_garaj = New System.Windows.Forms.DataGridView()
+        Me.txt_habitaN = New System.Windows.Forms.TextBox()
+        Me.dgv_habit = New System.Windows.Forms.DataGridView()
+        Me.ESTADOITableAdapter = New CapaPresentación.DB_HOTELDataSet2TableAdapters.ESTADOITableAdapter()
+        Me.CB_Slot = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.dgv_garaj, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ESTADOIBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DB_HOTELDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_habit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.GroupBox1.Controls.Add(Me.CB_Slot)
         Me.GroupBox1.Controls.Add(Me.btn_liberar)
-        Me.GroupBox1.Controls.Add(Me.btn_actualizar)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.CB_slot)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.txt_placa)
-        Me.GroupBox1.Location = New System.Drawing.Point(10, 5)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Controls.Add(Me.txt_habitaN)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(168, 292)
+        Me.GroupBox1.Size = New System.Drawing.Size(113, 239)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Habitaciones"
         '
         'btn_liberar
         '
-        Me.btn_liberar.Location = New System.Drawing.Point(8, 241)
-        Me.btn_liberar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_liberar.Location = New System.Drawing.Point(6, 196)
         Me.btn_liberar.Name = "btn_liberar"
-        Me.btn_liberar.Size = New System.Drawing.Size(133, 28)
+        Me.btn_liberar.Size = New System.Drawing.Size(100, 23)
         Me.btn_liberar.TabIndex = 11
         Me.btn_liberar.Text = "Liberar"
         Me.btn_liberar.UseVisualStyleBackColor = True
         '
-        'btn_actualizar
-        '
-        Me.btn_actualizar.Location = New System.Drawing.Point(8, 204)
-        Me.btn_actualizar.Margin = New System.Windows.Forms.Padding(4)
-        Me.btn_actualizar.Name = "btn_actualizar"
-        Me.btn_actualizar.Size = New System.Drawing.Size(133, 28)
-        Me.btn_actualizar.TabIndex = 10
-        Me.btn_actualizar.Text = "Actualizar"
-        Me.btn_actualizar.UseVisualStyleBackColor = True
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(8, 116)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(6, 94)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(0, 17)
+        Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 8
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(8, 68)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(6, 60)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 17)
+        Me.Label2.Size = New System.Drawing.Size(58, 13)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Habitación"
         '
-        'CB_slot
+        'ESTADOIBindingSource
         '
-        Me.CB_slot.DisplayMember = "SLOT"
-        Me.CB_slot.FormattingEnabled = True
-        Me.CB_slot.Location = New System.Drawing.Point(8, 38)
-        Me.CB_slot.Margin = New System.Windows.Forms.Padding(4)
-        Me.CB_slot.Name = "CB_slot"
-        Me.CB_slot.Size = New System.Drawing.Size(60, 24)
-        Me.CB_slot.TabIndex = 3
-        Me.CB_slot.ValueMember = "SLOT"
+        Me.ESTADOIBindingSource.DataMember = "ESTADOI"
+        Me.ESTADOIBindingSource.DataSource = Me.DB_HOTELDataSet2
+        '
+        'DB_HOTELDataSet2
+        '
+        Me.DB_HOTELDataSet2.DataSetName = "DB_HOTELDataSet2"
+        Me.DB_HOTELDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(8, 18)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(6, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 17)
+        Me.Label1.Size = New System.Drawing.Size(40, 13)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Estado"
         '
-        'txt_placa
+        'txt_habitaN
         '
-        Me.txt_placa.Location = New System.Drawing.Point(8, 87)
-        Me.txt_placa.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_placa.Name = "txt_placa"
-        Me.txt_placa.Size = New System.Drawing.Size(132, 22)
-        Me.txt_placa.TabIndex = 4
+        Me.txt_habitaN.Location = New System.Drawing.Point(6, 76)
+        Me.txt_habitaN.Name = "txt_habitaN"
+        Me.txt_habitaN.ReadOnly = True
+        Me.txt_habitaN.Size = New System.Drawing.Size(100, 20)
+        Me.txt_habitaN.TabIndex = 4
         '
-        'dgv_garaj
+        'dgv_habit
         '
-        Me.dgv_garaj.AllowUserToAddRows = False
-        Me.dgv_garaj.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        Me.dgv_garaj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_garaj.Location = New System.Drawing.Point(182, 13)
-        Me.dgv_garaj.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgv_garaj.Name = "dgv_garaj"
-        Me.dgv_garaj.ReadOnly = True
-        Me.dgv_garaj.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_garaj.Size = New System.Drawing.Size(591, 284)
-        Me.dgv_garaj.TabIndex = 8
+        Me.dgv_habit.AllowUserToAddRows = False
+        Me.dgv_habit.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
+        Me.dgv_habit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_habit.Location = New System.Drawing.Point(133, 11)
+        Me.dgv_habit.Name = "dgv_habit"
+        Me.dgv_habit.ReadOnly = True
+        Me.dgv_habit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_habit.Size = New System.Drawing.Size(443, 231)
+        Me.dgv_habit.TabIndex = 8
+        '
+        'ESTADOITableAdapter
+        '
+        Me.ESTADOITableAdapter.ClearBeforeFill = True
+        '
+        'CB_Slot
+        '
+        Me.CB_Slot.Location = New System.Drawing.Point(6, 36)
+        Me.CB_Slot.Name = "CB_Slot"
+        Me.CB_Slot.ReadOnly = True
+        Me.CB_Slot.Size = New System.Drawing.Size(100, 20)
+        Me.CB_Slot.TabIndex = 12
         '
         'MantHabit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(786, 312)
+        Me.ClientSize = New System.Drawing.Size(590, 254)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.dgv_garaj)
+        Me.Controls.Add(Me.dgv_habit)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MantHabit"
         Me.Text = "MantHabit"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.dgv_garaj, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ESTADOIBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DB_HOTELDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_habit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btn_liberar As Button
-    Friend WithEvents btn_actualizar As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Private WithEvents CB_slot As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txt_placa As TextBox
-    Friend WithEvents dgv_garaj As DataGridView
+    Friend WithEvents txt_habitaN As TextBox
+    Friend WithEvents dgv_habit As DataGridView
+    Friend WithEvents DB_HOTELDataSet2 As DB_HOTELDataSet2
+    Friend WithEvents ESTADOIBindingSource As BindingSource
+    Friend WithEvents ESTADOITableAdapter As DB_HOTELDataSet2TableAdapters.ESTADOITableAdapter
+    Friend WithEvents CB_Slot As TextBox
 End Class

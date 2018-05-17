@@ -20,5 +20,22 @@ Public Class HotelCN
     Public Function AddVehiG(ByVal slot As Integer, ByVal placa As String, ByVal dni As String)
         Return hotel.AddVehiculoG(slot, placa, dni)
     End Function
-
+    Public Function ListHabita() As DataTable
+        Return hotel.ListHabitacion
+    End Function
+    Public Function ListHabita2() As DataTable
+        Return hotel.ListHabitacion2
+    End Function
+    Public Function ListHabita3() As DataTable
+        Return hotel.ListHabitacion3
+    End Function
+    Public Function AsigHabita(ByVal IDH, ByVal IDC)
+        Return hotel.AssignHabitacion(IDH, IDC)
+    End Function
+    Public Function UnassignHabita(ByVal IDH)
+        Return hotel.UnassignHabitacion(IDH)
+    End Function
+    Public Function EnableHabita(ByVal IDH)
+        Return hotel.EnableHabitacion(IDH)
+    End Function
 End Class

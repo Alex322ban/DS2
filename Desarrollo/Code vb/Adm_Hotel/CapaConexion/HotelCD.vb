@@ -70,8 +70,8 @@ Public Class HotelCD
         Dim da As New SqlDataAdapter("P0006", cn.getCN)
         da.SelectCommand.CommandType = CommandType.StoredProcedure
 
-        da.SelectCommand.Parameters.AddWithValue("@IDC", IDC)
         da.SelectCommand.Parameters.AddWithValue("@IDH", IDH)
+        da.SelectCommand.Parameters.AddWithValue("@IDC", IDC)
 
         Dim tb As New DataTable
         da.Fill(tb)
@@ -98,7 +98,6 @@ Public Class HotelCD
         da.Fill(tb)
         Return tb
     End Function
-
     Public Function ListCliente() As DataTable
         Dim da As New SqlDataAdapter("P0009", cn.getCN)
         Dim tb As New DataTable
@@ -112,6 +111,18 @@ Public Class HotelCD
         da.Fill(tb)
         Return tb
     End Function
+    Public Function ListHabitacion2() As DataTable
+        Dim da As New SqlDataAdapter("P0013", cn.getCN)
+        Dim tb As New DataTable
+        da.Fill(tb)
+        Return tb
+    End Function
+    Public Function ListHabitacion3() As DataTable
+        Dim da As New SqlDataAdapter("P0014", cn.getCN)
+        Dim tb As New DataTable
+        da.Fill(tb)
+        Return tb
+    End Function
 
     Public Function ListGaraje() As DataTable
         Dim da As New SqlDataAdapter("P0011", cn.getCN)
@@ -119,7 +130,6 @@ Public Class HotelCD
         da.Fill(tb)
         Return tb
     End Function
-
 
     Public Function ListInventario() As DataTable
         Dim da As New SqlDataAdapter("P0012", cn.getCN)
