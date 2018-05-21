@@ -86,6 +86,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_HOTELDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_HOTELDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_HOTELDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_HOTELDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_HOTELDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.Designer.vb">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </Compile>
@@ -189,6 +199,28 @@
     </None>
     <None Include="DB_HOTELDataSet2.xss">
       <DependentUpon>DB_HOTELDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_HOTELDataSet3.xsc">
+      <DependentUpon>DB_HOTELDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_HOTELDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_HOTELDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_HOTELDataSet3.xss">
+      <DependentUpon>DB_HOTELDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_HOTELDataSet4.xsc">
+      <DependentUpon>DB_HOTELDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_HOTELDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_HOTELDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_HOTELDataSet4.xss">
+      <DependentUpon>DB_HOTELDataSet4.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

@@ -21,7 +21,7 @@ Public Class MantCli
         If txt_ape.Text = "" Or txt_dni.Text = "" Or txt_nomb.Text = "" Then
             MsgBox("Complete los recuadros", MessageBoxIcon.Warning)
         Else
-            Dim result As Integer = MessageBox.Show("¿Seguro quiere eliminar este cliente?", "Eliminar", MessageBoxButtons.YesNoCancel)
+            Dim result As Integer = MessageBox.Show("¿Seguro quiere añadir este cliente?", "Eliminar", MessageBoxButtons.YesNoCancel)
             If result = DialogResult.Cancel Then
                 cargarCliente()
             ElseIf result = DialogResult.No Then
