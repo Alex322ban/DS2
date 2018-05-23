@@ -16,7 +16,7 @@ Public Class Login
                 .AddWithValue("@PASS", TextBox2.Text.ToUpper)
             End With
             reader = comando.ExecuteReader
-
+            tip = TextBox1.Text
             If reader.HasRows = True Then
                 Me.Hide()
                 FormPrincipal.Show()
@@ -29,5 +29,7 @@ Public Class Login
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
+
+
     End Sub
 End Class

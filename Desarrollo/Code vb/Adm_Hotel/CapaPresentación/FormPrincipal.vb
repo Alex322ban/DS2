@@ -7,6 +7,11 @@
     Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'DB_HOTELDataSet3.MenuStrip' table. You can move, or remove it, as needed.
         Me.MenuStripTableAdapter.Fill(Me.DB_HOTELDataSet3.MenuStrip)
+
+        Dim item As New ToolStripMenuItem(tip)
+        Me.MenuStrip1.Items.Add(item)
+
+
     End Sub
 
     Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click

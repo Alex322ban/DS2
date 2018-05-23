@@ -138,7 +138,7 @@ Public Class HotelCD
         Return tb
     End Function
 
-
+    '    Public Function Consultar
 
 
 End Class

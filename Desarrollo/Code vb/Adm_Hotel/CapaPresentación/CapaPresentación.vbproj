@@ -102,6 +102,7 @@
     <Compile Include="FormPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GlobAll.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>

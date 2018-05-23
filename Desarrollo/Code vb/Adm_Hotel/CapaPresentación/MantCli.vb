@@ -6,7 +6,9 @@ Public Class MantCli
         cargarHabit2()
         CheckBox1.Checked = True
 
-
+        If (HOTEL.ListCli).LoadDataRow = True Then
+            MsgBox("hola")
+        End If
     End Sub
     Private Sub cargarCliente()
         dgv_cli.DataSource = HOTEL.ListCli()
@@ -66,7 +68,6 @@ Public Class MantCli
         txt_ape.Text = dgv_cli.Item(2, i).Value()
         txt_nomb.Text = dgv_cli.Item(1, i).Value()
     End Sub
-
     Private Sub dgv_habit_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_habit.CellClick
         Dim i As Integer
         i = dgv_habit.CurrentRow.Index
