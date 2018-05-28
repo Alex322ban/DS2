@@ -45,3 +45,4 @@ C:\Users\Alex\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentació
 C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.Login.resources
 C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.MantHabit.resources
 C:\Users\fchoquecota\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.FormPrincipal.resources
+C:\Users\Alex\Documents\GitHub\DS2\Desarrollo\Code vb\Adm_Hotel\CapaPresentación\obj\Debug\CapaPresentación.FormPrincipal.resources

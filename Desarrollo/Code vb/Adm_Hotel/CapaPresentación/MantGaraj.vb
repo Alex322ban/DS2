@@ -4,7 +4,7 @@ Public Class MantGaraj
     Private Sub MantGaraj_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CB_slot.DropDownStyle = ComboBoxStyle.DropDownList
         'TODO: This line of code loads data into the 'DB_HOTELDataSet1.LISTCBSLOT' table. You can move, or remove it, as needed.
-        Me.LISTCBSLOTTableAdapter.Fill(Me.DB_HOTELDataSet1.LISTCBSLOT)
+        'Me.LISTCBSLOTTableAdapter.Fill(Me.DB_HOTELDataSet1.LISTCBSLOT)
         ''TODO: This line of code loads data into the 'DB_HOTELDataSet.GARAJE' table. You can move, or remove it, as needed.
         'Me.GARAJETableAdapter.Fill(Me.DB_HOTELDataSet.GARAJE)
         CargarGaraj()

@@ -6,9 +6,9 @@ Public Class MantCli
         cargarHabit2()
         CheckBox1.Checked = True
 
-        If (HOTEL.ListCli).LoadDataRow = True Then
-            MsgBox("hola")
-        End If
+        'If (HOTEL.ListCli).LoadDataRow = True Then
+        '    MsgBox("hola")
+        'End If
     End Sub
     Private Sub cargarCliente()
         dgv_cli.DataSource = HOTEL.ListCli()

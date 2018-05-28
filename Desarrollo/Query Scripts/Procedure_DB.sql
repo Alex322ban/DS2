@@ -78,7 +78,7 @@ SELECT *
 FROM HABITACION
 --DESASIGNAR HABITACIÓN
 --======================================================
-ALTER PROCEDURE P0007
+CREATE PROCEDURE P0007
 @IDH INT
 AS 
 BEGIN
@@ -113,7 +113,7 @@ END
 
 --LISTAR CLIENTES
 --======================================================
-ALTER PROCEDURE P0009
+CREATE PROCEDURE P0009
 AS
 BEGIN
 SELECT IDC , Nomb AS 'Nombre', Ape AS 'Apellido', DNI 
@@ -122,7 +122,7 @@ SELECT IDC , Nomb AS 'Nombre', Ape AS 'Apellido', DNI
 END
 --LISTAR HABITACIONES
 --======================================================
-alter PROCEDURE P0010
+CREATE PROCEDURE P0010
 AS
 BEGIN 
 	SELECT idh as 'Cod',DESCRIPCION AS 'Descripción', num AS 'Cuarto', Nomb AS 'Nombres', Ape AS 'Apellidos' 
@@ -177,7 +177,7 @@ SELECT *
 FROM USUARIO
 
 
-ALTER PROCEDURE SESION
+CREATE PROCEDURE SESION
 @USR varchar(30),
 @PASS varchar(30)
 AS 
@@ -209,5 +209,5 @@ END
 
 SELECT *
 FROM CATEGORIA
-
+SELECT * FROM GARAJE
 

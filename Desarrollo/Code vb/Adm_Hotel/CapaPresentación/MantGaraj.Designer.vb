@@ -22,13 +22,7 @@ Partial Class MantGaraj
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.dgv_garaj = New System.Windows.Forms.DataGridView()
-        Me.CB_slot = New System.Windows.Forms.ComboBox()
-        Me.GARAJEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DB_HOTELDataSet = New CapaPresentación.DB_HOTELDataSet()
-        Me.LISTCBSLOTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DB_HOTELDataSet1 = New CapaPresentación.DB_HOTELDataSet1()
         Me.txt_placa = New System.Windows.Forms.TextBox()
         Me.txt_dni = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,13 +32,8 @@ Partial Class MantGaraj
         Me.btn_Añadir = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.GARAJETableAdapter = New CapaPresentación.DB_HOTELDataSetTableAdapters.GARAJETableAdapter()
-        Me.LISTCBSLOTTableAdapter = New CapaPresentación.DB_HOTELDataSet1TableAdapters.LISTCBSLOTTableAdapter()
+        Me.CB_slot = New System.Windows.Forms.ComboBox()
         CType(Me.dgv_garaj, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GARAJEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DB_HOTELDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LISTCBSLOTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DB_HOTELDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,65 +42,37 @@ Partial Class MantGaraj
         Me.dgv_garaj.AllowUserToAddRows = False
         Me.dgv_garaj.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.dgv_garaj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_garaj.Location = New System.Drawing.Point(141, 12)
+        Me.dgv_garaj.Location = New System.Drawing.Point(188, 15)
+        Me.dgv_garaj.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgv_garaj.Name = "dgv_garaj"
         Me.dgv_garaj.ReadOnly = True
         Me.dgv_garaj.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_garaj.Size = New System.Drawing.Size(443, 231)
+        Me.dgv_garaj.Size = New System.Drawing.Size(591, 284)
         Me.dgv_garaj.TabIndex = 2
-        '
-        'CB_slot
-        '
-        Me.CB_slot.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.GARAJEBindingSource, "SLOT", True))
-        Me.CB_slot.DataSource = Me.LISTCBSLOTBindingSource
-        Me.CB_slot.DisplayMember = "SLOT"
-        Me.CB_slot.FormattingEnabled = True
-        Me.CB_slot.Location = New System.Drawing.Point(6, 31)
-        Me.CB_slot.Name = "CB_slot"
-        Me.CB_slot.Size = New System.Drawing.Size(46, 21)
-        Me.CB_slot.TabIndex = 3
-        Me.CB_slot.ValueMember = "SLOT"
-        '
-        'GARAJEBindingSource
-        '
-        Me.GARAJEBindingSource.DataMember = "GARAJE"
-        Me.GARAJEBindingSource.DataSource = Me.DB_HOTELDataSet
-        '
-        'DB_HOTELDataSet
-        '
-        Me.DB_HOTELDataSet.DataSetName = "DB_HOTELDataSet"
-        Me.DB_HOTELDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'LISTCBSLOTBindingSource
-        '
-        Me.LISTCBSLOTBindingSource.DataMember = "LISTCBSLOT"
-        Me.LISTCBSLOTBindingSource.DataSource = Me.DB_HOTELDataSet1
-        '
-        'DB_HOTELDataSet1
-        '
-        Me.DB_HOTELDataSet1.DataSetName = "DB_HOTELDataSet1"
-        Me.DB_HOTELDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'txt_placa
         '
-        Me.txt_placa.Location = New System.Drawing.Point(6, 71)
+        Me.txt_placa.Location = New System.Drawing.Point(8, 87)
+        Me.txt_placa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_placa.Name = "txt_placa"
-        Me.txt_placa.Size = New System.Drawing.Size(100, 20)
+        Me.txt_placa.Size = New System.Drawing.Size(132, 22)
         Me.txt_placa.TabIndex = 4
         '
         'txt_dni
         '
-        Me.txt_dni.Location = New System.Drawing.Point(6, 110)
+        Me.txt_dni.Location = New System.Drawing.Point(8, 135)
+        Me.txt_dni.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_dni.Name = "txt_dni"
-        Me.txt_dni.Size = New System.Drawing.Size(100, 20)
+        Me.txt_dni.Size = New System.Drawing.Size(132, 22)
         Me.txt_dni.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 15)
+        Me.Label1.Location = New System.Drawing.Point(8, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(25, 13)
+        Me.Label1.Size = New System.Drawing.Size(32, 17)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Slot"
         '
@@ -127,36 +88,41 @@ Partial Class MantGaraj
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txt_placa)
         Me.GroupBox1.Controls.Add(Me.txt_dni)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 6)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 7)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(126, 237)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(168, 292)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Garaje"
         '
         'btn_liberar
         '
-        Me.btn_liberar.Location = New System.Drawing.Point(6, 196)
+        Me.btn_liberar.Location = New System.Drawing.Point(8, 241)
+        Me.btn_liberar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_liberar.Name = "btn_liberar"
-        Me.btn_liberar.Size = New System.Drawing.Size(100, 23)
+        Me.btn_liberar.Size = New System.Drawing.Size(133, 28)
         Me.btn_liberar.TabIndex = 11
         Me.btn_liberar.Text = "Liberar"
         Me.btn_liberar.UseVisualStyleBackColor = True
         '
         'btn_actualizar
         '
-        Me.btn_actualizar.Location = New System.Drawing.Point(6, 166)
+        Me.btn_actualizar.Location = New System.Drawing.Point(8, 204)
+        Me.btn_actualizar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_actualizar.Name = "btn_actualizar"
-        Me.btn_actualizar.Size = New System.Drawing.Size(100, 23)
+        Me.btn_actualizar.Size = New System.Drawing.Size(133, 28)
         Me.btn_actualizar.TabIndex = 10
         Me.btn_actualizar.Text = "Actualizar"
         Me.btn_actualizar.UseVisualStyleBackColor = True
         '
         'btn_Añadir
         '
-        Me.btn_Añadir.Location = New System.Drawing.Point(6, 137)
+        Me.btn_Añadir.Location = New System.Drawing.Point(8, 169)
+        Me.btn_Añadir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Añadir.Name = "btn_Añadir"
-        Me.btn_Añadir.Size = New System.Drawing.Size(100, 23)
+        Me.btn_Añadir.Size = New System.Drawing.Size(133, 28)
         Me.btn_Añadir.TabIndex = 9
         Me.btn_Añadir.Text = "Añadir"
         Me.btn_Añadir.UseVisualStyleBackColor = True
@@ -164,42 +130,43 @@ Partial Class MantGaraj
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 94)
+        Me.Label3.Location = New System.Drawing.Point(8, 116)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 13)
+        Me.Label3.Size = New System.Drawing.Size(31, 17)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "DNI"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 55)
+        Me.Label2.Location = New System.Drawing.Point(8, 68)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 13)
+        Me.Label2.Size = New System.Drawing.Size(43, 17)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Placa"
         '
-        'GARAJETableAdapter
+        'CB_slot
         '
-        Me.GARAJETableAdapter.ClearBeforeFill = True
-        '
-        'LISTCBSLOTTableAdapter
-        '
-        Me.LISTCBSLOTTableAdapter.ClearBeforeFill = True
+        Me.CB_slot.FormattingEnabled = True
+        Me.CB_slot.Location = New System.Drawing.Point(8, 38)
+        Me.CB_slot.Margin = New System.Windows.Forms.Padding(4)
+        Me.CB_slot.Name = "CB_slot"
+        Me.CB_slot.Size = New System.Drawing.Size(60, 24)
+        Me.CB_slot.TabIndex = 3
+        Me.CB_slot.ValueMember = "SLOT"
         '
         'MantGaraj
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(591, 257)
+        Me.ClientSize = New System.Drawing.Size(788, 316)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgv_garaj)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MantGaraj"
         CType(Me.dgv_garaj, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GARAJEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DB_HOTELDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LISTCBSLOTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DB_HOTELDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -213,12 +180,6 @@ Partial Class MantGaraj
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents DB_HOTELDataSet As DB_HOTELDataSet
-    Friend WithEvents GARAJEBindingSource As BindingSource
-    Friend WithEvents GARAJETableAdapter As DB_HOTELDataSetTableAdapters.GARAJETableAdapter
-    Friend WithEvents DB_HOTELDataSet1 As DB_HOTELDataSet1
-    Friend WithEvents LISTCBSLOTBindingSource As BindingSource
-    Friend WithEvents LISTCBSLOTTableAdapter As DB_HOTELDataSet1TableAdapters.LISTCBSLOTTableAdapter
     Friend WithEvents btn_liberar As Button
     Friend WithEvents btn_actualizar As Button
     Friend WithEvents btn_Añadir As Button
